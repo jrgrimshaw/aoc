@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 
 async function main() {
-  const input = await fs.readFile("input.txt", "utf8");
+  const input = await fs.readFile("sample-input.txt", "utf8");
 
   const matches = [...input.matchAll(/mul\([0-9,]{0,10}\)/gi)].map((x) =>
     x[0]
